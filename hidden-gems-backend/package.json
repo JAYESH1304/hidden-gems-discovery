@@ -1,28 +1,26 @@
 {
   "name": "hidden-gems-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "description": "Backend API for Hidden Gems platform",
+  "main": "src/server.js",
   "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
   "dependencies": {
-    "axios": "^1.12.2",
-    "bad-words": "^4.0.0",
-    "bcryptjs": "^3.0.2",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
     "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^5.1.0",
-    "js-yaml": "^4.1.0",
-    "jsonwebtoken": "^9.0.2",
-    "leo-profanity": "^1.8.0",
-    "mongoose": "^8.19.1"
+    "dotenv": "^16.0.3",
+    "leo-profanity": "^1.7.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^2.0.22"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }
